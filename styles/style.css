@@ -33,16 +33,16 @@ header{
 }
 
 .header_logo{
-    display:grid;
-    width:148px;
-    height:105px;
+  display:grid;
+  width:148px;
+  height:105px;
 }
 
 .address{
-    display:grid;
-    justify-self:end;
-    gap:2px;
-    padding-right:50px;
+  display:grid;
+  justify-self:end;
+  gap:2px;
+  padding-right:50px;
 }
 
 .cover{
@@ -90,20 +90,20 @@ header{
 }
 
 .cover_description{
-    display:flex;
-    justify-content:space-between;
-    height:51px;
-    text-align:center;
-    text-transform:uppercase;
+  display:flex;
+  justify-content:space-between;
+  height:51px;
+  text-align:center;
+  text-transform:uppercase;
 }
 
 .cover_description_text{
-    display:flex;
-    padding-top:10px;
-    color:white;
-    font-family: 'Raleway Regular', sans-serif;
-    font-size:22px;
-    word-spacing:20px;
+  display:flex;
+  padding-top:10px;
+  color:white;
+  font-family: 'Raleway Regular', sans-serif;
+  font-size:22px;
+  word-spacing:20px;
 }
 
 
@@ -147,11 +147,11 @@ header{
 }
 
 .card__title{
-    width:254px;
-    color:white;
-    font-family: 'Raleway Bold', sans-serif;
-    font-size:22px;
-    text-transform:uppercase;
+  width:254px;
+  color:white;
+  font-family: 'Raleway Bold', sans-serif;
+  font-size:22px;
+  text-transform:uppercase;
 }
 
 .card__text{
