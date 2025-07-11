@@ -8,8 +8,9 @@ header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items:center;
-  height:293px;
-  font-family: 'Raleway Regular', sans-serif;
+  min-height:293px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
 }
 
 .header_menu {
@@ -23,13 +24,22 @@ header {
   gap:20px;
 }
 
-.circle-divider {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin-top:8px;
-  border:0.5px solid black;
-  border-radius: 50%;
+.header_link {
+  text-decoration:underline;
+
+}
+
+.header_link_active {
+  text-decoration:none;
+}
+
+.header_links-list-item {
+  padding:10px;
+  list-style-type:circle;
+}
+
+.no-marker {
+  list-style-type: none;
 }
 
 .header_logo {
@@ -43,6 +53,14 @@ header {
   justify-self:end;
   gap:2px;
   padding-right:50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  font-style:normal;
+}
+
+.header_address_paragraph {
+  display:grid;
+  flex-direction:column;
 }
 
 .cover {
@@ -65,11 +83,11 @@ header {
   display:flex;
   flex-direction:column;
   justify-content:center;
-  height:385px;
   margin-top:30px;
-  padding-top:150px;
+  padding-top:100px;
   color:white;
-  font-family: 'Raleway Bold', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight:700;
   font-size:100px;
   letter-spacing: 25px;
   text-transform:uppercase;
@@ -117,6 +135,7 @@ header {
   font-size:22px;
   text-transform:uppercase;
   background-color:transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -126,12 +145,15 @@ header {
 
 .lots__heading {
   margin-left:30px;
-  font-family: 'Raleway Bold', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight:700;
   font-size:40px;
+  text-transform:uppercase;
 }
 
 .lots__card-list {
   display:flex;
+  flex-wrap:wrap;
   justify-content:space-between;
   padding-top:30px;
 }
@@ -140,48 +162,58 @@ header {
   display:flex;
   flex-direction:column;
   justify-content:space-between;
+  width:334px;
+  height:596px;
+  margin-top:15px;
+  padding:50px;
   background-repeat:no-repeat;
   background-position:center;
   background-size:cover;
-  width:334px;
-  height:596px;
-  padding:50px;
 }
 
 .card__title {
   width:254px;
   color:white;
-  font-family: 'Raleway Bold', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight:700;
   font-size:22px;
   text-transform:uppercase;
 }
 
 .card__text {
   display:flex;
+  flex-direction:column;
+  justify-content:space-between;
   width:264px;
+  height:596px;
   color:white;
-  font-family: 'Raleway Regular', sans-serif;
-  font-size:21px;
 }
 
-.card-lot:nth-child(1) {
+.card_paragraph{
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  font-size:20px;
+  text-decoration:none;
+}
+
+.card_type_film {
   background-image:url(../images/card-lot-01.jpg);
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-01.jpg");
 }
 
-.card-lot:nth-child(2) {
+.card_type_book {
   background-image:url(../images/card-lot-02.jpg);
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-02.jpg");
 }
 
-.card-lot:nth-child(3) {
+.card_type_picture {
   background-image:url(../images/card-lot-03.jpg);
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/card-lot-03.jpg");
 }
 
@@ -209,7 +241,6 @@ header {
 
 .about-info {
   width:693px;
-  height:449px;
   padding-top:90px;
 }
 
@@ -235,12 +266,25 @@ footer {
   grid-template-columns: 1fr min-content 1fr;
   height:180px;
   margin-top:100px;
-  font-family:'Raleway Regular', sans-serif;
-  font-style: normal;
+}
+
+.footer__address {
+  font-family: 'Raleway', sans-serif;
+  font-weight:400;
+  font-style:normal;
+}
+
+.footer_address_paragraph{
+  display:grid;
+  flex-direction:column;
 }
 
 .footer_menu {
   display:grid;
+}
+
+.footer_links-list-item {
+  list-style:none;
 }
 
 .footer_links-list {
