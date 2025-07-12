@@ -14,7 +14,7 @@ header {
 }
 
 .header_menu {
-  padding-left:30px;
+  padding-left:50px;
   font-size:18px;
 }
 
@@ -22,7 +22,6 @@ header {
   display:grid;
   grid-auto-flow:column;
   justify-self:start;
-  gap:20px;
 }
 
 .header_link {
@@ -35,7 +34,8 @@ header {
 }
 
 .header_links-list-item {
-  padding:10px;
+  padding-right:10px;
+  list-style-position:inside;
   list-style-type:circle;
 }
 
@@ -44,32 +44,24 @@ header {
 }
 
 .header_logo {
-  display:grid;
+  display:flex;
   width:148px;
   height:105px;
 }
 
-.header_address {
+.header__address {
   display:grid;
+  flex-direction:column;
   justify-self:end;
-  gap:5px;
-  padding-top:10px;
+  gap:4px;
   padding-right:90px;
-  font-family: 'Raleway', sans-serif;
-  font-weight:400;
-  font-size:18px;
-  font-style:normal;
 
 }
 .address {
   font-family: 'Raleway', sans-serif;
   font-weight:400;
+  font-size:18px;
   font-style:normal;
-}
-
-.header_address_paragraph {
-  display:grid;
-  flex-direction:column;
 }
 
 .cover {
@@ -161,12 +153,11 @@ header {
 }
 
 .lots {
-  margin-top:150px;
+  margin-top:180px;
 }
 
 .lots__heading {
-  margin-left:65px;
-  padding-top:40px;
+  margin-left:60px;
   font-family: 'Raleway', sans-serif;
   font-weight:700;
   font-size:40px;
@@ -183,7 +174,7 @@ header {
   flex-direction:column;
   justify-content:space-between;
   width:334px;
-  margin-top:25px;
+  margin-top:27px;
   margin-left:25px;
   padding-left:40px;
   background-repeat:no-repeat;
@@ -255,31 +246,32 @@ header {
   display:grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
-  margin-top:125px;
-  padding:30px;
+  margin-top:120px;
 }
 
 
 .logo-about {
   width:240px;
   height:240px;
-  margin-left:40px;
+  margin-left:70px;
+  padding-top:35px;
 }
 
 .about-info {
   width:693px;
+  margin-right:30px;
 }
 
 .about-auc {
-  padding-top:100px;
+  padding-top:136px;
   font-family:'Raleway', sans-serif;
   font-weight:700;
-  font-size:30px;
+  font-size:40px;
 }
 
 .about-text {
   width:693px;
-  padding-top:60px;
+  padding-top:80px;
   padding-left:10px;
   font-family:'Raleway', sans-serif;
   font-weight:400;
@@ -287,13 +279,14 @@ header {
 }
 
 .cont-text {
-  margin-top:30px;
+  padding-top:24px;
 }
 
 footer {
   display:grid;
   grid-template-columns: 1fr min-content 1fr;
-  margin-top:150px;
+  margin-top:180px;
+  padding-bottom:115px;
 }
 
 .footer__address {
@@ -301,13 +294,9 @@ footer {
   flex-direction:column;
   gap:5px;
   padding-left:50px;
-  font-family: 'Raleway', sans-serif;
-  font-weight:400;
-  font-size:18px;
-  font-style:normal;
 }
 
-.footer_address_paragraph {
+.address_paragraph {
   display:grid;
   flex-direction:column;
 }
